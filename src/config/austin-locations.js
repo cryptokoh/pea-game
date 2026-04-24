@@ -1,0 +1,273 @@
+/**
+ * Austin Quest Locations
+ * Real shops and wellness centers — first territory for Nored Farms reps.
+ */
+
+export const AUSTIN_LOCATIONS = [
+    {
+        id: 'herb-bar',
+        name: 'The Herb Bar',
+        address: '3200 Merrie Lynn Ave, Austin, TX 78722',
+        phone: '(512) 444-6251',
+        hours: 'Tue-Sat 10:30am-6pm, Sun 10:30am-5pm',
+        website: 'theherbbar.com',
+        type: 'Apothecary & Metaphysical',
+        tags: ['herbs', 'tinctures', 'teas', 'essential oils', 'crystals'],
+        description: "Austin's oldest apothecary since 1987. They make nearly 100 herbal products in-house — tinctures, tea blends, salves. Carries bulk medicinal herbs, essential oils, crystals, and tarot supplies.",
+        lat: 30.2862,
+        lng: -97.7164,
+        emoji: '🌿',
+        color: '#50e8c0',
+        bestProducts: ['blue-lotus', 'kanna', 'kava'],
+        difficulty: 1,
+        xpReward: 150,
+        questTitle: 'The Apothecary Apprentice',
+        questDescription: 'Visit The Herb Bar and learn the science behind Blue Lotus and Kanna. Pass the knowledge check to prove you can pitch these products to Austin\'s oldest herb shop.',
+        ownerPersonality: 'Knowledgeable herbalist who values scientific backing and traditional use. Wants to know alkaloid profiles and sourcing.',
+        pitchTips: [
+            'Lead with the science — they know their herbs',
+            'Mention the traditional Egyptian use of Blue Lotus',
+            'Highlight CO2 extraction for purity',
+            'They make products in-house, so emphasize raw botanicals and extracts'
+        ]
+    },
+    {
+        id: 'la-lighthouse',
+        name: 'La Lighthouse at Casa de Luz',
+        address: '1701 Toomey Rd, Austin, TX 78704',
+        phone: null,
+        hours: 'Varies — check Casa de Luz village hours',
+        website: 'casadeluz.org',
+        type: 'Holistic Co-op & Metaphysical Shop',
+        tags: ['reiki', 'tarot', 'crystals', 'holistic wellness', 'vegan community'],
+        description: "Holistic co-op inside Casa de Luz Village — Austin's longest-running vegan kitchen and community center since 1983. La Lighthouse offers angel/tarot readings, reiki, energy work, and artisan metaphysical retail.",
+        lat: 30.2644,
+        lng: -97.7616,
+        emoji: '🏮',
+        color: '#e8c050',
+        bestProducts: ['kava', 'blue-lotus', 'kanna'],
+        difficulty: 2,
+        xpReward: 200,
+        questTitle: 'Light the Lighthouse',
+        questDescription: 'Enter Casa de Luz Village and pitch to the holistic co-op. Learn about Kava\'s kavalactones and how they complement the wellness community\'s vibe.',
+        ownerPersonality: 'Holistic wellness community. Values plant medicine traditions, organic sourcing, community benefit. Less about hard science, more about healing intent.',
+        pitchTips: [
+            'Emphasize organic and ethical sourcing',
+            'Connect to their wellness community — kava for group ceremonies',
+            'Blue Lotus tea fits their vegan kitchen aesthetic',
+            'Offer samples for their practitioners to try'
+        ]
+    },
+    {
+        id: 'ace-of-cups',
+        name: 'Ace of Cups Apothecary',
+        address: '2121 E Cesar Chavez St, Austin, TX 78702',
+        phone: '(512) 524-1596',
+        hours: 'Mon-Sat 11am-7pm, Sun 12pm-5pm',
+        website: 'aceofcupsaustin.com',
+        type: 'Wellness Center & Apothecary',
+        tags: ['massage', 'herbs', 'yoga', 'tarot', 'wellness'],
+        description: "East Austin wellness hub combining herbal apothecary with bodywork studios. They craft custom tinctures and tea blends, offer massage and reiki, and host yoga classes. The vibe is modern bohemian with deep roots in herbalism.",
+        lat: 30.2536,
+        lng: -97.7253,
+        emoji: '🍵',
+        color: '#c050e8',
+        bestProducts: ['kanna', 'blue-lotus', 'kava'],
+        difficulty: 2,
+        locked: true,
+        unlockLevel: 3,
+        xpReward: 200,
+        questTitle: 'East Side Elixirs',
+        questDescription: 'Pitch to the East Austin wellness scene. Ace of Cups crafts their own herbal remedies — show them why Nored Farms botanicals belong on their shelves.',
+        ownerPersonality: 'Modern herbalist who blends traditional knowledge with contemporary wellness. Values quality ingredients, custom formulations, and products that complement their in-house line.',
+        pitchTips: [
+            'They make their own products — position yours as complementary, not competing',
+            'Kanna fits their mood support category perfectly',
+            'Offer to do a product education session for their staff',
+            'East Austin customers are adventurous — lead with unique botanicals'
+        ]
+    },
+    {
+        id: 'texas-medicinals',
+        name: 'Texas Medicinals',
+        address: '8708 S Congress Ave, Austin, TX 78745',
+        phone: '(512) 707-8893',
+        hours: 'Mon-Fri 9am-6pm, Sat 10am-4pm',
+        website: 'texasmedicinals.com',
+        type: 'Artisan Herbal Remedies',
+        tags: ['tinctures', 'wild-harvested', 'small-batch', 'organic'],
+        description: "Veteran herbalist operation making artisan remedies since 1999. Everything is small-batch, many ingredients wild-harvested from Texas Hill Country. They have strict quality standards and deep botanical knowledge. Not easy to impress.",
+        lat: 30.3074,
+        lng: -97.7426,
+        emoji: '🧪',
+        color: '#e85050',
+        bestProducts: ['kanna', 'blue-lotus', 'kava'],
+        difficulty: 3,
+        locked: true,
+        unlockLevel: 5,
+        xpReward: 300,
+        questTitle: 'The Herbalist\'s Challenge',
+        questDescription: 'Texas Medicinals has been making artisan remedies since 1999. Convince a veteran herbalist that your extracts meet their quality standards.',
+        ownerPersonality: 'Veteran herbalist with 25+ years experience. Extremely knowledgeable. Tests products personally. Values extraction methods, alkaloid standardization, and transparent sourcing. Hard to impress but loyal once convinced.',
+        pitchTips: [
+            'Know your extraction methods cold — they will quiz you',
+            'Bring COA (Certificate of Analysis) data if possible',
+            'Emphasize CO2 extraction superiority over alcohol-based',
+            'Respect their expertise — ask questions, don\'t just pitch'
+        ]
+    },
+    // Additional Austin locations
+    {
+        id: 'peoples-pharmacy',
+        name: 'Peoples Rx Pharmacy',
+        address: '4018 N Lamar Blvd, Austin, TX 78756',
+        phone: '(512) 459-7663',
+        hours: 'Mon-Sat 9am-9pm, Sun 10am-7pm',
+        website: 'peoplesrx.com',
+        type: 'Natural Pharmacy & Wellness',
+        tags: ['pharmacy', 'supplements', 'organic', 'vitamins', 'wellness'],
+        description: "Austin's largest independent natural pharmacy chain. Carries thousands of supplements, herbs, and natural health products. Knowledgeable staff with clinical backgrounds. High foot traffic and strong repeat customer base.",
+        lat: 30.3100,
+        lng: -97.7388,
+        emoji: '💊',
+        color: '#50b8e8',
+        bestProducts: ['kanna', 'kava', 'blue-lotus'],
+        difficulty: 2,
+        locked: true,
+        unlockLevel: 4,
+        xpReward: 250,
+        questTitle: 'Pharmacy Protocol',
+        questDescription: 'Peoples Rx is Austin\'s natural pharmacy powerhouse. They need clinical data and compliance info. Show them your products meet their standards.',
+        ownerPersonality: 'Clinical buyers who want data. They check for contraindications, drug interactions, and sourcing documentation. Professional and systematic in vendor evaluation.',
+        pitchTips: [
+            'Lead with safety data and contraindication profiles',
+            'Mention shelf stability and packaging quality',
+            'They want clinical studies — bring references',
+            'High volume potential if you get in — worth the effort'
+        ]
+    },
+    {
+        id: 'in-gredients',
+        name: 'in.gredients',
+        address: '2610 Manor Rd, Austin, TX 78722',
+        phone: '(512) 382-7064',
+        hours: 'Daily 8am-8pm',
+        website: 'in-gredients.com',
+        type: 'Zero-Waste Market & Community Hub',
+        tags: ['zero-waste', 'local', 'organic', 'community', 'sustainable'],
+        description: "America's first zero-waste grocery store turned community market. Hyper-focused on sustainability, local sourcing, and minimal packaging. Strong community following in East Austin's Manor Road district.",
+        lat: 30.2830,
+        lng: -97.7160,
+        emoji: '🌱',
+        color: '#7ce850',
+        bestProducts: ['blue-lotus', 'kanna'],
+        difficulty: 1,
+        locked: true,
+        unlockLevel: 2,
+        xpReward: 175,
+        questTitle: 'Zero Waste, Full Value',
+        questDescription: 'in.gredients values sustainability above all. Show them how Nored Farms botanicals align with their zero-waste mission.',
+        ownerPersonality: 'Sustainability-first mindset. Cares about packaging, supply chain transparency, and local/ethical sourcing. Community-oriented decision making.',
+        pitchTips: [
+            'Lead with sustainable sourcing and packaging options',
+            'Offer bulk/refill options for dried botanicals',
+            'Connect to their community — offer to do an herb education event',
+            'Emphasize the local Texas connection'
+        ]
+    },
+    {
+        id: 'rabbit-food',
+        name: 'Rabbit Food Grocery',
+        address: '312 W 5th St, Austin, TX 78701',
+        phone: '(512) 236-9990',
+        hours: 'Mon-Sat 8am-9pm, Sun 9am-8pm',
+        website: 'rabbitfoodgrocery.com',
+        type: 'Vegan Grocery & Wellness Market',
+        tags: ['vegan', 'plant-based', 'wellness', 'downtown', 'organic'],
+        description: "Downtown Austin's premier vegan grocery and wellness market. Everything is 100% plant-based. Strong wellness section with supplements, teas, and botanicals. Young, health-conscious customer base.",
+        lat: 30.2680,
+        lng: -97.7470,
+        emoji: '🥕',
+        color: '#e8a050',
+        bestProducts: ['blue-lotus', 'kanna', 'kava'],
+        difficulty: 1,
+        locked: true,
+        unlockLevel: 2,
+        xpReward: 175,
+        questTitle: 'Plant-Powered Pitch',
+        questDescription: 'Rabbit Food\'s customers are plant-based enthusiasts. Every Nored Farms product is naturally vegan — make that connection sing.',
+        ownerPersonality: 'Young, passionate vegan entrepreneur. Values plant-based everything, ethical sourcing, and products with a story. Social media savvy — products need to be Instagram-worthy.',
+        pitchTips: [
+            'Everything Nored Farms makes is 100% plant-based — lead with that',
+            'Blue Lotus gummies are their most Instagrammable product',
+            'Offer samples for their smoothie/juice bar',
+            'Young customer base loves new wellness trends'
+        ]
+    },
+    {
+        id: 'antonelli-cheese',
+        name: 'Antonelli\'s Cheese Shop',
+        address: '4220 Duval St, Austin, TX 78751',
+        phone: '(512) 531-9610',
+        hours: 'Mon-Sat 11am-7pm, Sun 12pm-5pm',
+        website: 'antonellischeese.com',
+        type: 'Artisan Food & Gourmet Market',
+        tags: ['artisan', 'gourmet', 'local', 'food-pairing', 'events'],
+        description: "Award-winning artisan cheese shop and gourmet market in Hyde Park. They curate specialty food products and host pairing events. Not a traditional herb shop — but their customers appreciate unique, artisan products with a story.",
+        lat: 30.3050,
+        lng: -97.7260,
+        emoji: '🧀',
+        color: '#e8d050',
+        bestProducts: ['blue-lotus', 'kanna'],
+        difficulty: 3,
+        locked: true,
+        unlockLevel: 6,
+        xpReward: 300,
+        questTitle: 'The Gourmet Gambit',
+        questDescription: 'Antonelli\'s isn\'t an herb shop — it\'s a gourmet experience. Can you position Nored Farms botanicals as artisan food-adjacent products?',
+        ownerPersonality: 'Food artisan and storyteller. Loves products with provenance, traditional craftsmanship, and unique flavor profiles. Expects you to know the culinary angle of your products.',
+        pitchTips: [
+            'Position Blue Lotus tea as a pairing companion for cheese boards',
+            'Dragon Fruit plants appeal to their foodie customers',
+            'Emphasize artisan craft and traditional preparation methods',
+            'This is a creative placement — think outside the herb shop box'
+        ]
+    },
+    {
+        id: 'south-congress-books',
+        name: 'South Congress Books',
+        address: '1608 S Congress Ave, Austin, TX 78704',
+        phone: '(512) 916-8882',
+        hours: 'Daily 10am-8pm',
+        website: 'southcongressbooks.com',
+        type: 'Bookstore & Cultural Hub',
+        tags: ['books', 'ethnobotany', 'culture', 'SoCo', 'gifts'],
+        description: "Iconic SoCo bookstore known for rare finds and cultural curation. Strong sections on ethnobotany, herbal medicine, and alternative health. They carry select artisan products alongside books. High tourist and local foot traffic.",
+        lat: 30.2520,
+        lng: -97.7504,
+        emoji: '📚',
+        color: '#b050e8',
+        bestProducts: ['blue-lotus', 'kanna'],
+        difficulty: 2,
+        locked: true,
+        unlockLevel: 4,
+        xpReward: 225,
+        questTitle: 'The Ethnobotany Connection',
+        questDescription: 'South Congress Books has Austin\'s best ethnobotany section. Position Nored Farms products alongside the knowledge — where plant science meets plant medicine.',
+        ownerPersonality: 'Intellectual curator who connects ideas across domains. Values educational products, ethnobotanical history, and items that complement their book collection. Loves a good narrative.',
+        pitchTips: [
+            'Connect each product to ethnobotanical literature they carry',
+            'Blue Lotus + ancient Egyptian art books = perfect pairing',
+            'Offer to provide educational cards or bookmarks with products',
+            'Seeds and dried botanicals work well in a bookstore gift context'
+        ]
+    }
+];
+
+export function getUnlockedLocations(level) {
+    return AUSTIN_LOCATIONS.filter(loc => !loc.locked || level >= (loc.unlockLevel || 1));
+}
+
+export function getLocationById(id) {
+    return AUSTIN_LOCATIONS.find(loc => loc.id === id);
+}

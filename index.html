@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEA — Pure Extracts Adventures</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@350;500&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/pea/assets/index-y1oX1GsD.js"></script>
+  <link rel="modulepreload" crossorigin href="/pea/assets/phaser-JQjKh_Pe.js">
+  <link rel="stylesheet" crossorigin href="/pea/assets/index-WM0LBOow.css">
+</head>
+<body data-theme="botanical">
+    <div id="game-container"></div>
+
+    <!-- Retro CRT effects -->
+    <div id="scanlines"></div>
+    <div id="crt-vignette"></div>
+
+    <!-- HTML overlay for UI elements (forms, modals, toasts) -->
+    <div id="ui-overlay">
+        <!-- HUD bar -->
+        <div id="hud" class="hud hidden">
+            <div class="hud-left">
+                <span id="hud-name" class="hud-name"></span>
+                <span id="hud-level" class="hud-badge">Lv 1</span>
+            </div>
+            <div class="hud-center">
+                <div class="xp-bar-wrap">
+                    <div id="hud-xp-bar" class="xp-bar-fill" style="width:0%"></div>
+                </div>
+                <span id="hud-xp-text" class="xp-text">0 / 500 XP</span>
+            </div>
+            <div class="hud-right">
+                <div id="hud-daily" class="hud-daily" title="Daily quests">
+                    <span class="hud-daily-dot" data-dot="0"></span>
+                    <span class="hud-daily-dot" data-dot="1"></span>
+                    <span class="hud-daily-dot" data-dot="2"></span>
+                </div>
+                <div id="hud-ach" class="hud-achievements" title="Achievements">
+                    <span class="hud-ach-icon">&#x1F3C6;</span>
+                    <span id="hud-ach-count">0/10</span>
+                </div>
+                <span id="hud-streak" class="hud-streak" title="Day streak">0</span>
+            </div>
+        </div>
+
+        <!-- Bottom navigation bar (5 tabs) -->
+        <div id="nav-bar" class="nav-bar hidden">
+            <button class="nav-btn active" data-nav="hub">
+                <span class="nav-btn-icon">&#x1F3E0;</span>
+                Hub
+            </button>
+            <button class="nav-btn" data-nav="garden">
+                <span class="nav-btn-icon">&#x1F33F;</span>
+                Garden
+            </button>
+            <button class="nav-btn" data-nav="library">
+                <span class="nav-btn-icon">&#x1F4DA;</span>
+                Library
+            </button>
+            <button class="nav-btn" data-nav="leaderboard">
+                <span class="nav-btn-icon">&#x1F3C6;</span>
+                Ranks
+            </button>
+            <button class="nav-btn" data-nav="profile">
+                <span class="nav-btn-icon">&#x1F464;</span>
+                Profile
+            </button>
+        </div>
+
+        <!-- Toast notifications -->
+        <div id="toast-container" class="toast-container"></div>
+
+        <!-- Modal layer -->
+        <div id="modal-backdrop" class="modal-backdrop hidden">
+            <div id="modal-content" class="modal-content"></div>
+        </div>
+    </div>
+
+</body>
+</html>
